@@ -7,8 +7,8 @@ import (
 )
 import _ "github.com/go-sql-driver/mysql"
 type Employee struct {
-	Id int `json:"id"`
-	Name string `json:"name"`
+	Id int 
+	Name string 
 }
 func main() {
 
