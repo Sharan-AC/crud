@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package ="./;pb";
+
+message Employee{
+    string name =1;
+    string ID=2;
+}
+message ID{
+    string ID=1;
+}
+service CRUD{
+    rpc CreateItem(Employee) returns (ID);
+}
